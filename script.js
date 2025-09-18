@@ -30,6 +30,7 @@ $.getJSON("https://gist.githubusercontent.com/LLgeo13/71313ed5ed7748cc99b2b73b7d
       weight: 3,
       opacity: 1
         },
+    onEachFeature: onEachFeature  
   }).addTo(map);
 });
 
@@ -45,6 +46,7 @@ $.getJSON("https://gist.githubusercontent.com/LLgeo13/822dbe042602f9bd82aa500213
         })
       });
         },
+    onEachFeature: onEachFeature  
   }).addTo(map);
 });
 
