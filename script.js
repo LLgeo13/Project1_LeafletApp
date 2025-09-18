@@ -23,7 +23,7 @@ $.getJSON("https://gist.githubusercontent.com/LLgeo13/8132f355742d56f3c1fb85419c
 });
 
 // Add Tram_Line layer
-$.getJSON("https://gist.githubusercontent.com/LLgeo13/05174c9cc83fec6b482087893b30f570/raw/53d38febf43fc01a773a6c7ac5e2dbdcbc2a1f4b/Tram_Lines_SmoothLine.geojson", function(data) {
+$.getJSON("https://gist.githubusercontent.com/LLgeo13/71313ed5ed7748cc99b2b73b7d59270e/raw/d4eeb9cbdf88681ea534d3e643086d86ba145490/TramPath.geojson", function(data) {
   L.geoJson(data, {
     style: {
       color: "#00CED1",
@@ -34,7 +34,7 @@ $.getJSON("https://gist.githubusercontent.com/LLgeo13/05174c9cc83fec6b482087893b
 });
 
 // Add Entrances Layer
-$.getJSON("https://gist.githubusercontent.com/LLgeo13/52fcd1eed3a3c9c249f842b2b905d91b/raw/89f9de24aa2b40152f28c864a94ce83734192d63/Entrances.geojson", function(data) {
+$.getJSON("https://gist.githubusercontent.com/LLgeo13/822dbe042602f9bd82aa500213fbc0a6/raw/bbbfec2ad9b49907918e6902160a051861f46a17/Gates.geojson", function(data) {
   L.geoJson(data, {
     pointToLayer: function(feature, latlng) {
       return L.marker(latlng, {
@@ -49,7 +49,7 @@ $.getJSON("https://gist.githubusercontent.com/LLgeo13/52fcd1eed3a3c9c249f842b2b9
 });
 
 // Add Favorites Layer
-$.getJSON("https://gist.githubusercontent.com/LLgeo13/750ae88a75b9eedee8e2117081cf2ea3/raw/508a40df0c627ffb1c5bb40812d629af53bb1704/gistfile1.txt", function(data) {
+$.getJSON("https://gist.githubusercontent.com/LLgeo13/f76df1022122c574ddc8ac8dc4909f2b/raw/15a7ec4e06a33d99a2385dd4b13114a255ffaedf/Favorites.geojson", function(data) {
   L.geoJson(data, {
     pointToLayer: function(feature, latlng) {
       return L.marker(latlng, {
