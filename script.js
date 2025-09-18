@@ -47,3 +47,19 @@ $.getJSON("https://gist.githubusercontent.com/LLgeo13/52fcd1eed3a3c9c249f842b2b9
         },
   }).addTo(map);
 });
+
+// Add Favorites Layer
+$.getJSON("https://gist.githubusercontent.com/LLgeo13/750ae88a75b9eedee8e2117081cf2ea3/raw/14c65ef9ab248741b615fb7b73786e93d479dc79/gistfile1.txt", function(data) {
+  L.geoJson(data, {
+    pointToLayer: function(feature, latlng) {
+      return L.marker(latlng, {
+        icon: L.divIcon({
+          className: 'custom-icon',
+          html: '<div style="background-color: #00ff00; width: 8px; height: 8px; border: 2px solid black; border-radius: 50%;"></div>',
+          iconSize: [8, 8]
+        })
+      });
+        },
+    onEachFeature: onEachFeature
+  }).addTo(map);
+});
