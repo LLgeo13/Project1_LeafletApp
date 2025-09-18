@@ -49,7 +49,7 @@ $.getJSON("https://gist.githubusercontent.com/LLgeo13/52fcd1eed3a3c9c249f842b2b9
 });
 
 // Add Favorites Layer
-$.getJSON("https://gist.githubusercontent.com/LLgeo13/750ae88a75b9eedee8e2117081cf2ea3/raw/14c65ef9ab248741b615fb7b73786e93d479dc79/gistfile1.txt", function(data) {
+$.getJSON("https://gist.githubusercontent.com/LLgeo13/750ae88a75b9eedee8e2117081cf2ea3/raw/508a40df0c627ffb1c5bb40812d629af53bb1704/gistfile1.txt", function(data) {
   L.geoJson(data, {
     pointToLayer: function(feature, latlng) {
       return L.marker(latlng, {
